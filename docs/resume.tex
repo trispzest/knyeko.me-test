@@ -13,6 +13,20 @@
 %%%%%%%%%%%%
 
 \usepackage[top=0.5in, left=0.75in, right=0.75in, bottom=0.5in]{geometry}
+\usepackage{etoolbox}
+
+
+%%%%%%%%%%
+% Macros %
+%%%%%%%%%%
+
+% Usage:
+% \begin{pzentry}{title}{subtitle}{date}
+% description
+% \end{pzentry}
+\newenvironment{pzentry}[3]
+{\textbf{#1}\notblank{#2}{\textit{~- #2}}{}\hfill\textit{#3}\\\normalsize}
+{\bigskip}
 
 
 %%%%%%%%%%%%%%%%%
@@ -37,56 +51,66 @@
 
 \makecvtitle
 
-\section{Education}
+%%%%%%%%%%%%%%%%%%%%%
+\section{Education} %
+%%%%%%%%%%%%%%%%%%%%%
 
-\cventry{Aug 2014 - May 2015}{Master of Engineering}
-{Cornell University, \mdseries College of Engineering}{Ithaca, NY}
-{Computer Science, \textup{GPA: 4.052}}
-{}
-\medskip
+\begin{pzentry}{Cornell University}{M.Eng., Computer Science}{Aug 2014 - May 2015}
+Cumulative GPA: 4.052
+\end{pzentry}
 
-\cventry{Aug 2011 - May 2014}{Bachelor of Science}
-{Cornell University, \mdseries College of Engineering}{Ithaca, NY}
-{Computer Science, \textup{GPA: 3.876}}
-{}
-\medskip
+\begin{pzentry}{Cornell University}{B.S., Computer Science}{Aug 2011 - May 2014}
+Cumulative GPA: 3.876
+\end{pzentry}
 
 % \cventry{Sept 2007 - May 2011}{\upshape GPA: $\sim$ 4.2}
 % {Lincoln Senior High School}{Ypsilanti, MI}
 % {}
 % {}
 
-\section{Experience}
 
-\cventry{Jan 2015 - May 2015}{Developer}
-{CrowdVerity}{Ithaca, NY}
-{}
-{Worked with professor Emin G\"{u}n Sirer on M.Eng project \url{crowdverity.com}. CrowdVerity uses Ethereum to import facts from the real-world into the digital and block-chain domains. [Ethereum, Django]}
-\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work Experience} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cventry{May 2014 - Aug 2014}{SDE Intern}
-{Microsoft}{Redmond, WA}
-{}
-{Worked to enhance security and flexibility in Engineering Systems of Operating Systems Core. [C/C++]}
-\medskip
+\begin{pzentry}{Microsoft}{SDE Intern}{May 2014 - Aug 2014}
+% Worked to enhance security and flexibility in Engineering Systems of Operating Systems Core.
+Worked within Engineering Systems of Operating Systems Core.
+Built from scratch a Windows SSH server that was compatible with OpenSSH and PuTTY clients.
+[C/C++]
+\end{pzentry}
 
-\cventry{May 2013 - Aug 2013}{SDET Intern}
-{Microsoft}{Redmond, WA}
-{}
-{Developed both traditional and randomized testing automation for the Email and Calendar team in Windows Phone. [C\#]}
-\medskip
+\begin{pzentry}{Microsoft}{SDET Intern}{May 2013 - Aug 2013}
+Developed both traditional and randomized testing automation for the Email and Calendar team in Windows Phone.
+[C\#]
+\end{pzentry}
 
-\cventry{Aug 2013 - May 2015}{Teaching Assistant}
-{Cornell University}{Ithaca, NY}
-{}
-{Served on course staff for CS 3110 Data Structures and Functional Programming, CS 4820 Introduction to the Analysis of Algorithms ($\times$2), and CS 4410 Operating Systems. [OCaml, \LaTeX, Python, C]}
-\medskip
+\begin{pzentry}{Cornell University}{Teaching Assistant}{Aug 2013 - May 2015}
+Served on course staff for CS 3110 Data Structures and Functional Programming, CS 4820 Introduction to the Analysis of Algorithms ($\times$2), and CS 4410 Operating Systems.
+[OCaml, \LaTeX, Python, C]
+\end{pzentry}
 
-\cventry{May 2013 - Aug 2013}{Developer}
-{Pirates of the Stratosphere}{Ithaca, NY}
-{}
-{Worked in a 5 member interdisciplinary team to create a pirate-themed shooter. The game won in Cornell's 2013 GDIAC Showcase. [C\#]}
-\medskip
+
+%%%%%%%%%%%%%%%%%%%%
+\section{Projects} %
+%%%%%%%%%%%%%%%%%%%%
+
+\begin{pzentry}{CrowdVerity}{}{Jan 2015 - May 2015}
+Worked with professor Emin G\"{u}n Sirer on M.Eng project \url{crowdverity.com}.
+CrowdVerity imports facts from the real-world into the digital and blockchain domains.
+[Ethereum, Django, HTML/JavaScript/CSS]
+\end{pzentry}
+
+\begin{pzentry}{PORTCULLIS}{}{Jan 2015 - May 2015}
+Built a secure password manager in a group of 4 people.
+PORTCULLIS featured 2-factor authentication, sharing/revocation, and an almost trustless central server.
+[Java]
+\end{pzentry}
+
+\begin{pzentry}{Pirates of the Stratosphere}{}{May 2013 - Aug 2013}Worked in a 5 member interdisciplinary team to create a pirate-themed shooter.
+The game won in Cornell's 2013 GDIAC Showcase.
+[C\#]
+\end{pzentry}
 
 % \cventry{Jan 2013 - May 2013}{Undergraduate Researcher}
 % {Cornell University}{Ithaca, NY}
@@ -94,17 +118,13 @@
 % {Explored the use of network flow algorithms in computer vision under Professor Ramin Zabih.}
 % \medskip
 
-\cventry{Sept 2011 - May 2013}{Developer}
-{Violet Nano-Satellite Project Team}{Ithaca, NY}
-{}
-{Worked with the satellite's power board on the Command and Data Handling subsystem of the team. [C, Python]}
-\medskip
+\begin{pzentry}{Violet Nano-Satellite Project Team}{}{Sept 2011 - May 2013}
+Worked with the satellite's power board within the team's Command and Data Handling subsystem. [C, Python]
+\end{pzentry}
 
-\cventry{June 2012 - Aug 2013}{Independent}
-{Windows Phone App Development}{Ypsilanti, MI}
-{}
-{Designed and developed 5 apps for Windows Phone 7 and 8 with total downloads exceeding 10k.  The most recent app \emph{Bus Alarm} placed first in Microsoft's 2013 Intern AppHack competition. [C\#]}
-\medskip
+\begin{pzentry}{Windows Phone App Development}{}{June 2012 - Aug 2013}
+Designed and developed 5 apps for Windows Phone 7 and 8 with total downloads exceeding 10k.  The most recent app \emph{Bus Alarm} placed first in Microsoft's 2013 Intern AppHack competition. [C\#]
+\end{pzentry}
 
 
 % \cventry{June 2012 - August 2012}{Developer}
@@ -113,9 +133,13 @@
 % {Create a user-friendly management system for a cemetery near my hometown. [VBA]}
 % \medskip
 
-\section{Technical Skills}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \cvitem{Languages}{C\#, C/C++, Java, OCaml, Python, HTML/JavaScript/CSS, VBA, Matlab, Prolog, Perl}
 \medskip
-\cvitem{Tools}{SSH, \LaTeX, Git, Powershell, Unix, Visual Studio, Django, AngularJS}
+\cvitem{Tools}{\LaTeX, Git, Powershell, Unix, Visual Studio, Django, AngularJS}
 
 \end{document}
