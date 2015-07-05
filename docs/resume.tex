@@ -1,40 +1,54 @@
 \documentclass[11pt,letterpaper,sans]{moderncv}
 
-% Themes
+%%%%%%%%%%
+% Themes %
+%%%%%%%%%%
+
 \moderncvstyle{banking}
 \moderncvcolor{orange}
 
-% Margins
+
+%%%%%%%%%%%%
+% Packages %
+%%%%%%%%%%%%
+
 \usepackage[top=0.5in, left=0.75in, right=0.75in, bottom=0.5in]{geometry}
 
-% Personal data
+
+%%%%%%%%%%%%%%%%%
+% Personal data %
+%%%%%%%%%%%%%%%%%
+
 % \firstname{Peter}
 % \lastname{Zieske}
 \name{Peter}{Zieske}
-% \address{113 N Quarry St. Apt. \#1}{Ithaca, NY 14850}{United States}
 \address{7319 Willow Creek Drive}{Ypsilanti, MI 48197}
 \mobile{+1~(734)~358~7208}
 \email{pdz8@cornell.edu}
 % \social[linkedin]{peter-zieske}
 % \social[github]{pdz8}
 
-% Resume
+
+%%%%%%%%%%
+% Resume %
+%%%%%%%%%%
+
 \begin{document}
 
 \makecvtitle
 
 \section{Education}
 
-\cventry{Aug 2014 - May 2015 (expected)}{Master of Engineering}
+\cventry{Aug 2014 - May 2015}{Master of Engineering}
 {Cornell University, \mdseries College of Engineering}{Ithaca, NY}
-{Computer Science}
-{}\medskip
+{Computer Science, \textup{GPA: 4.052}}
+{}
+\medskip
 
 \cventry{Aug 2011 - May 2014}{Bachelor of Science}
 {Cornell University, \mdseries College of Engineering}{Ithaca, NY}
-{Computer Science}
-{Cumulative GPA: 3.876, Major GPA: 4.000}
-% {GPA: 3.876}
+{Computer Science, \textup{GPA: 3.876}}
+{}
 \medskip
 
 % \cventry{Sept 2007 - May 2011}{\upshape GPA: $\sim$ 4.2}
@@ -43,6 +57,12 @@
 % {}
 
 \section{Experience}
+
+\cventry{Jan 2015 - May 2015}{Developer}
+{CrowdVerity}{Ithaca, NY}
+{}
+{Worked with professor Emin G\"{u}n Sirer on M.Eng project \url{crowdverity.com}. CrowdVerity uses Ethereum to import facts from the real-world into the digital and block-chain domains. [Ethereum, Django]}
+\medskip
 
 \cventry{May 2014 - Aug 2014}{SDE Intern}
 {Microsoft}{Redmond, WA}
@@ -56,7 +76,7 @@
 {Developed both traditional and randomized testing automation for the Email and Calendar team in Windows Phone. [C\#]}
 \medskip
 
-\cventry{Aug 2013 - Present}{Teaching Assistant}
+\cventry{Aug 2013 - May 2015}{Teaching Assistant}
 {Cornell University}{Ithaca, NY}
 {}
 {Served on course staff for CS 3110 Data Structures and Functional Programming, CS 4820 Introduction to the Analysis of Algorithms ($\times$2), and CS 4410 Operating Systems. [OCaml, \LaTeX, Python, C]}
@@ -68,11 +88,11 @@
 {Worked in a 5 member interdisciplinary team to create a pirate-themed shooter. The game won in Cornell's 2013 GDIAC Showcase. [C\#]}
 \medskip
 
-\cventry{Jan 2013 - May 2013}{Undergraduate Researcher}
-{Cornell University}{Ithaca, NY}
-{}
-{Explored the use of network flow algorithms in computer vision under Professor Ramin Zabih.}
-\medskip
+% \cventry{Jan 2013 - May 2013}{Undergraduate Researcher}
+% {Cornell University}{Ithaca, NY}
+% {}
+% {Explored the use of network flow algorithms in computer vision under Professor Ramin Zabih.}
+% \medskip
 
 \cventry{Sept 2011 - May 2013}{Developer}
 {Violet Nano-Satellite Project Team}{Ithaca, NY}
@@ -80,22 +100,22 @@
 {Worked with the satellite's power board on the Command and Data Handling subsystem of the team. [C, Python]}
 \medskip
 
-\cventry{June 2012 - Present}{Independent}
+\cventry{June 2012 - Aug 2013}{Independent}
 {Windows Phone App Development}{Ypsilanti, MI}
 {}
 {Designed and developed 5 apps for Windows Phone 7 and 8 with total downloads exceeding 10k.  The most recent app \emph{Bus Alarm} placed first in Microsoft's 2013 Intern AppHack competition. [C\#]}
 \medskip
 
 
-\cventry{June 2012 - August 2012}{Developer}
-{Mt. Olivet Cemetery Database}{Chelsea, MI}
-{}
-{Create a user-friendly management system for a cemetery near my hometown. [VBA]}
-\medskip
+% \cventry{June 2012 - August 2012}{Developer}
+% {Mt. Olivet Cemetery Database}{Chelsea, MI}
+% {}
+% {Create a user-friendly management system for a cemetery near my hometown. [VBA]}
+% \medskip
 
 \section{Technical Skills}
-\cvitem{Languages}{C\#, C/C++, Java, OCaml, Python, HTML/JavaScript, VBA, Matlab, Prolog, Perl}
+\cvitem{Languages}{C\#, C/C++, Java, OCaml, Python, HTML/JavaScript/CSS, VBA, Matlab, Prolog, Perl}
 \medskip
-\cvitem{Tools}{SSH, \LaTeX, Git, Powershell, Unix, Visual Studio, AngularJS}
+\cvitem{Tools}{SSH, \LaTeX, Git, Powershell, Unix, Visual Studio, Django, AngularJS}
 
 \end{document}
