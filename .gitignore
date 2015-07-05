@@ -3,3 +3,9 @@
 *.log
 *.out
 *.synctex.gz
+
+## Sublime
+*.sublime-workspace
+
+## Dirs
+sandbox/
