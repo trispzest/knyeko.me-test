@@ -9,6 +9,10 @@
                 "*.log",
                 "*.out",
                 "*.synctex.gz"
+            ],
+            "folder_exclude_patterns": [
+                ".sass-cache",
+                "_site"
             ]
         }
     ]

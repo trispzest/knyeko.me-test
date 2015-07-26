@@ -1,3 +1,7 @@
+## Jekyll
+.sass-cache/
+_site/
+
 ## Tex
 *.aux
 *.log

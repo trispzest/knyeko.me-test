@@ -1,0 +1,30 @@
+# Site settings
+title: Peter Zieske
+email: pdz8@cornell.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Content unrelated to reptiles.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://peterzieske.com" # the base hostname & protocol for your site
+twitter_username: PeeDeeZee8
+github_username:  pdz8
+
+# Build settings
+markdown: kramdown
+
+# pdz8 settings
+exclude: [
+  sandbox/,
+  website.*,
+  ]
+permalink: /blog/:title.html
+# defaults:
+#   scope:
+#     path: ""
+#     type: "posts"
+#   values:
+#     permalink: "/blog/:title.html"
+#   scope:
+#     path: ""
+#     type: "drafts"
+#   values:
+#     permalink: "/blog/drafts/:title.html"
