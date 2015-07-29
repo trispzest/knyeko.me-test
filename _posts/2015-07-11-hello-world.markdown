@@ -4,8 +4,23 @@ title: "Hello World!"
 date: 2015-07-11 16:26:13
 categories:
 ---
-This is my obligatory introductory post. I am not a good writer. I am especially not a good writer when writing about my self. Bear with me as I get over this initial hump.
+Welcome to my blog!
+This is its obligatory introductory post.
+I want to give an idea of what type of content to expect from here.
 
-Hi, I'm Peter. I'm a recent computer science graduate that's starting a blog to continue talking about computer science outside of university. My interests lie primarily in theory of computation and systems. Their intersection is (in my opinion) cryptography and security, so that's particularly where my focus lies. Expect posts on the aforementioned subjects as well as general computer-related topics. Nice to meet you.
+I studied Computer Science in school.
+Thus it should not be a surprise that the focus of this blog will be on the same topic.
+Specifically within CS, I enjoy cryptography and system security.
+I still study both fields today and am planning my future career around them.
+Expect many posts on the matter.
 
-Yay, that's it!
+In addition to CS, I actively follow tech news and tend to generate a lot of commentary from what I see.
+Some rants may occasionally leak into here.
+I also earned a math minor in college and continue to study it for interest and crypto purposes.
+It too is fair game to appear in this blog.
+
+Of course, the direction of this blog could always change as I myself evolve.
+I don't expect any drastic differences to appear, but I'm not going to rule them out.
+(My dad is a CS guy who now does farming on the side.)
+Nevertheless I hope you enjoy whatever you find here in my blog.
+I will do my best to keep it watered.
