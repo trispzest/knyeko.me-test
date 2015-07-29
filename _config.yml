@@ -17,14 +17,3 @@ exclude: [
   website.*,
   ]
 permalink: /blog/:title.html
-# defaults:
-#   scope:
-#     path: ""
-#     type: "posts"
-#   values:
-#     permalink: "/blog/:title.html"
-#   scope:
-#     path: ""
-#     type: "drafts"
-#   values:
-#     permalink: "/blog/drafts/:title.html"
