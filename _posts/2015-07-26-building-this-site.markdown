@@ -9,7 +9,7 @@ The former is fast, customizable, and gives hacker-cred, while the latter is eas
 As you can see: I ended up going with the GitHub/Jekyll combo.
 This first post will serve as a record of my experiences building this blog without WordPress magic.
 Because I want the blog to be focused on less-front-end-type things, there will be no follow-ups to this post.
-As I build the blog, updates will appear here.
+As I build the blog, the updates will appear here.
 
 I want to establish I'm not some elite hacker web developer.
 The folks that make the amazing tools deserve all the credit.

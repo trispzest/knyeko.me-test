@@ -6,13 +6,18 @@
     max-width: $on-widescreen;
     margin-right: auto;
     margin-left: auto;
+    @include media-query($on-widescreen) {
+        width: 100%;
+    }
 }
 
 
-/**
- * Site header
- */
+/////////////////
+// Site header //
+/////////////////
+
 .site-header {
+
     // Size
     min-height: $nav-bar-height;
     max-width:  $sidebar-width;
@@ -22,61 +27,52 @@
 
     // Positioning
     position: fixed;
+    z-index: 999;
 
     // Resize
     @include media-query($on-palm) {
-        max-width: $on-palm - ($spacing-unit * 2);
+        max-width: $on-widescreen - ($spacing-unit * 2);
         left: 0px;
         right: 0px;
+        top: 0px;
         clear: both;
     }
 
     // Stylistic stuff
     background-color: $background-color;
+    border-right: 1px solid $grey-color-light;
+    height: 100%;
     @include media-query($on-palm) {
         border-bottom: 1px solid $grey-color-light;
+        border-right: none;
+        height: auto;
     }
-}
 
-.site-bar {
+    // Title
     .site-title {
         font-size: 26px;
         line-height: $nav-bar-height;
         letter-spacing: -1px;
-        margin-bottom: 0;
-        float: left;
 
-        &,
-        &:visited {
+        // Position
+        float: right;
+        margin-bottom: 0;
+        padding-top: $spacing-unit;
+        @include media-query($on-palm) {
+            float: left;
+            padding-top: 0px;
+        }
+
+        // Color
+        &,&:visited {
             color: $grey-color-dark;
         }
     }
+
+    // Menu
     .menu-icon {
         display: none;
-    }
-    .site-menu {
-        line-height: $nav-bar-height;
-        float: right;
-    }
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        text-align: right;
-        display: block;
-
-        // Gaps between nav items, but not on the first one
-        // &:not(:first-child) {
-        //     margin-left: 20px;
-        // }
-    }
-
-    @include media-query($on-palm) {
-        // margin-right: 0px;
-        // margin-top: 9px;
-        background-color: $background-color;
-
-        .menu-icon {
+        @include media-query($on-palm) {
             margin-right: 0px;
             margin-top: 9px;
             display: block;
@@ -99,14 +95,34 @@
                 }
             }
         }
+    }
+    .site-menu {
+        line-height: $nav-bar-height;
+        float: right;
+    }
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
 
-        .page-link {
+        text-align: right;
+        display: block;
+        padding: 5px 0px;
+
+        // Gaps between nav items, but not on the first one
+        // &:not(:first-child) {
+        //     margin-left: 20px;
+        // }
+
+        @include media-query($on-palm) {
             display: block;
             padding: 5px 10px;
             float: right;
             clear: both;
         }
+    }
 
+    // Operate the hamburger
+    @include media-query($on-palm) {
         .site-menu {
             display: none;
         }
@@ -119,26 +135,21 @@
 }
 
 
-//////////////////
-// Page content //
-//////////////////
+/////////////
+// Content //
+/////////////
 
 .page-content {
-    float: right;
     padding-top: $spacing-unit;
-    max-width: $on-widescreen - $sidebar-width - 2px;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
     box-sizing: border-box;
+    margin-left: $sidebar-width;
 
     @include media-query($on-palm) {
         margin-top: $nav-bar-height;
+        margin-left: 0px;
         width: 100%;
-    }
-
-    border-left: 1px solid $grey-color-light;
-    @include media-query($on-palm) {
-        border-left: none;
     }
 }
 
@@ -168,7 +179,7 @@
 
 
 ///////////
-// Posts //
+// Pages //
 ///////////
 
 .post-header {
@@ -180,7 +191,7 @@
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-palm) {
         font-size: 36px;
     }
 }
@@ -191,7 +202,7 @@
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-palm) {
             font-size: 28px;
         }
     }
@@ -199,7 +210,7 @@
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-palm) {
             font-size: 22px;
         }
     }
@@ -207,7 +218,7 @@
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-palm) {
             font-size: 18px;
         }
     }
@@ -219,67 +230,8 @@
 //////////////////
 
 .site-footer {
-    // border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
 
