@@ -73,6 +73,8 @@
     .menu-icon {
         display: none;
         @include media-query($on-palm) {
+            cursor: pointer;
+
             margin-right: 0px;
             margin-top: 9px;
             display: block;
@@ -86,7 +88,7 @@
             border: 1px solid $grey-color-light;
             border-radius: 5px;
 
-            > svg {
+            svg {
                 width: 18px;
                 height: 15px;
 
@@ -126,7 +128,11 @@
         .site-menu {
             display: none;
         }
-        .menu-icon:focus + .site-menu, .site-menu:hover {
+        // .menu-icon:focus + .site-menu, .site-menu:hover {
+        //     display: block;
+        //     clear: both;
+        // }
+        .menu-toggle:checked ~ .site-menu {
             display: block;
             clear: both;
         }
