@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Building this site"
-date:   2015-07-26 18:05:00
+title: "Building this site"
+date: 2015-07-26 18:05:00
 categories: 
 ---
 I spent a long time deciding between using GitHub/Jekyll or WordPress for my blog.
@@ -44,9 +44,80 @@ x_1 \lt x_2 \leq x_3
 $$
 ~~~
 
-results in
+results in:
 
 $$
 x_1 \lt x_2 \leq x_3
 $$
 
+
+### Pure CSS hamburger menu
+
+What is a hamburger menu?
+It's that $$\equiv$$ sign in the top-corner of mobile sites that stows away all the links that cannot fit on a small screen.
+If you're reading this in a browser, resize it so you can see what I'm talking about.
+Normally I'd be ranting about the terrible reachability/obscurity implications, but that post is saved for later.
+My site includes a hamburger menu because it's conformist and exploring other options is too difficult (especially for a non-native app).
+
+The default [Jekyll-new](https://github.com/jglovier/jekyll-new) theme provides a pure CSS hamburger menu that opens by *hovering*.
+So unless you're using an ancient Blackberry click-ball or Microsoft's canceled McLaren phone, there's no way to navigate the site!
+Changing the behavior to be click-based is not hard.
+It's basically the Hello World program of jQuery:
+
+~~~ javascript
+$(document).ready(function(){
+    $("#hamburger").click(function(){
+        $("#ham-menu").toggle();
+    });
+});
+~~~
+
+Why go back to pure CSS?
+
+*   Speed. One less HTTP call is one less millisecond.
+*   Elegance. It's called *Pure* CSS for a reason.
+*   Functionality. I actually had some trouble getting the jQuery to cooperate with the media-queries that were revealing/hiding the hamburger menu.
+    Toggling off the menu in the hamburger meant that the menu would no longer appear when viewing the site in wide-screen.
+
+The key to the pure CSS hamburger is to use a checkbox input.
+It will store the state of the menu, which can be referenced via CSS.
+The checkbox is hidden (because it looks nothing like a hamburger) and instead activated via a label.
+
+~~~ html
+<style>
+.menu-toggle {
+    display: none;
+}
+.menu-dropdown {
+    display: none;
+}
+.menu-toggle:checked ~ .menu-dropdown {
+    display: block;
+}
+</style>
+<div>
+    <label class="menu-icon" for="ham">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+    <input type="checkbox" id="ham" class=".menu-toggle">
+    <ul class="menu-dropdown">
+        <li><a></a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+    </ul>
+</div>
+
+~~~
+
+The approach is however limited.
+There's nothing show-stopping, but a few things arise from CSS's limitations:
+
+*   VimFx cannot see the menu icon.
+    There are no links in the icon because they interfere with the checkbox, and the checkbox itself is hidden.
+    Thus the icon evades the scanning of VimFx (and Vimium).
+    This of course is not an issue if you only intend for your menu to be used on mobile.
+*   The menu icon must be tapped again in order to collapse the menu.
+    Ideally tapping on the article should switch the focus back.
+    Mobile sites rarely have this feature but it is very common on native apps.

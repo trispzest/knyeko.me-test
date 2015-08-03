@@ -70,7 +70,7 @@
     }
 
     // Icon appearance
-    .corner-icon {
+    .hamburger-icon {
         margin-right: 0px;
         margin-top: 9px;
         float: right;
@@ -83,28 +83,30 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
 
-        svg {
+        > div {
             width: 18px;
-            height: 15px;
-
-            path {
-                fill: $grey-color-dark;
+            height: 3px;
+            margin: auto;
+            background-color: $grey-color-dark;
+            border-radius: 2px;
+            &:nth-of-type(2) {
+                margin: 3px auto;
             }
         }
     }
 
     // Menu
     .menu-icon {
-        @extend .corner-icon;
+        @extend .hamburger-icon;
         display: none;
+        cursor: pointer;
         @include media-query($on-palm) {
             display: block;
         }
     }
-    .close-icon {
-        @extend .corner-icon;
+    .menu-toggle {
         display: none;
-        z-index: 999;
+        float: right;
     }
     .site-menu {
         line-height: $nav-bar-height;
@@ -117,12 +119,7 @@
         text-align: right;
         display: block;
         padding: 5px 0px;
-
-        // Gaps between nav items, but not on the first one
-        // &:not(:first-child) {
-        //     margin-left: 20px;
-        // }
-
+        
         @include media-query($on-palm) {
             display: block;
             padding: 5px 10px;
@@ -136,15 +133,19 @@
         .site-menu {
             display: none;
         }
-        .menu-icon:focus {
-            display: none;
-        }
-        .menu-icon:focus ~ .site-menu, .site-menu:hover {
+        // .menu-icon:focus {
+        //     display: none;
+        // }
+        // .menu-icon:focus ~ .site-menu, .site-menu:hover {
+        //     display: block;
+        //     clear: both;
+        // }
+        // .menu-icon:focus ~ .close-icon {
+        //     display: block;
+        // }
+        .menu-toggle:checked ~ .site-menu {
             display: block;
             clear: both;
-        }
-        .menu-icon:focus ~ .close-icon {
-            display: block;
         }
     }
 
