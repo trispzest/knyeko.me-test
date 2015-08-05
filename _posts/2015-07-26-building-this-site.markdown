@@ -50,6 +50,11 @@ $$
 x_1 \lt x_2 \leq x_3
 $$
 
+**Note:**
+MathJax fails to display properly on mobile IE for Windows Phone.
+If you are one of the few, you can remedy this by telling IE to view the desktop versions of sites using MathJax.
+IE does not let you apply this setting for on a per-site basis, so I recommend setting up desktop mode on a different WP browser such as *UC Browser* and then using it when viewing MathJax sites.
+Hopefully Edge will fix these woes.
 
 ### Pure CSS hamburger menu
 
