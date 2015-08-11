@@ -16,7 +16,9 @@ permalink: /reading/
 *   [What's new](https://terrytao.wordpress.com/)
 *   [Windows On Theory](http://windowsontheory.org/)
 
-#### Humor
+#### Diversions
+*   [PhD Comics](http://phdcomics.com/comics.php)
+*   [The Brothers Brick](http://www.brothers-brick.com/)
 *   [What if?](http://what-if.xkcd.com/)
 *   [xkcd](http://xkcd.com/)
 
