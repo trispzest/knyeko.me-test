@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Hello World!"
-date: 2015-07-11 16:26:13
-categories:
 ---
 Welcome to my blog!
 This is its obligatory introductory post.

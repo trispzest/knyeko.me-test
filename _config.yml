@@ -17,3 +17,4 @@ exclude: [
   website.*,
   ]
 permalink: /blog/:title.html
+enable_disqus: true

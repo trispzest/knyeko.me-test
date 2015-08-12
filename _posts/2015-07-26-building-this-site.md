@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Building this site"
-date: 2015-07-26 18:05:00
-categories: 
 ---
 I spent a long time deciding between using GitHub/Jekyll or WordPress for my blog.
 The former is fast, customizable, and gives hacker-cred, while the latter is easy to set up and offers non-static site features.
