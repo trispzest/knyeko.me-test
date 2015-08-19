@@ -7,7 +7,9 @@ permalink: /reading/
 
 *   [A Few Thoughts on Cryptographic Engineering](http://blog.cryptographyengineering.com/)
 *   [Bristol Cryptography Blog](http://bristolcrypto.blogspot.com/)
+*   [Computational Complexity](http://blog.computationalcomplexity.org/)
 *   [Ethereum Blog](https://blog.ethereum.org/)
+*   [Godel's Lost Letter and P=NP](https://rjlipton.wordpress.com/)
 *   [Hacking, Distributed](http://hackingdistributed.com/)
 *   [Not so Great Ideas in Theoretical Computer Science](https://mittheory.wordpress.com/)
 *   [Shtetl-Optimized](http://www.scottaaronson.com/blog/)
@@ -17,12 +19,14 @@ permalink: /reading/
 *   [Windows On Theory](http://windowsontheory.org/)
 
 #### Diversions
+
 *   [PhD Comics](http://phdcomics.com/comics.php)
 *   [The Brothers Brick](http://www.brothers-brick.com/)
 *   [What if?](http://what-if.xkcd.com/)
 *   [xkcd](http://xkcd.com/)
 
 #### News
+
 *   [Bitcoin Magazine](https://bitcoinmagazine.com/)
 *   [Engadget](http://www.engadget.com/)
 *   [Hacker News](https://news.ycombinator.com/)
