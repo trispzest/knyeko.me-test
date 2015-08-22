@@ -15,9 +15,10 @@
   <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>-->
 
   {% if site.enable_social %}
+  <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   {% endif %}
 </head>
