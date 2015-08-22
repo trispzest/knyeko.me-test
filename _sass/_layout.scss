@@ -65,7 +65,6 @@
 
         // Suppress link behavior
         &,&:visited {
-            // color: $grey-color-dark;
             color: black;
         }
         &:hover {
@@ -264,6 +263,10 @@
         line-height: $tight-line-height;
         padding-bottom: $base-font-size;
         margin-top: (1 - $tight-line-height) * $post-link-size;
+
+        &,&:visited {
+            color: black;
+        }
     }
 }
 

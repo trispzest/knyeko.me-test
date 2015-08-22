@@ -2,7 +2,7 @@
 layout: post
 title: "The prequels were better"
 excerpt: >
-    This is a departure from CS and tech, but hopefully still is "nerdy" enough to belong on this blog:
+    This post is a departure from CS and tech, but hopefully still is "nerdy" enough to seem appropriate for this blog:
     The Star Wars prequels were better than the sequels. Get at me.
 ---
 This shouldn't be news to you: *Start Wars Episode XII: The Force Awakens* is coming out Christmas day.

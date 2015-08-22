@@ -1,6 +1,10 @@
 ---
 layout: post
 title: "Hello World!"
+excerpt: >
+    Welcome to my blog!
+    This is its obligatory introductory post.
+    I want to give an idea of what type of content to expect from here.    
 ---
 Welcome to my blog!
 This is its obligatory introductory post.
