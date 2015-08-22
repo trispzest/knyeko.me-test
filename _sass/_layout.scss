@@ -289,15 +289,26 @@
 // Footer stuff //
 //////////////////
 
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+.social-buttons {
+    > div {
+        float: left;
+        position: relative;
+        margin-bottom: $spacing-unit;
+    }
+    .twitter-button {
+        top: 4px;
+        left: $spacing-unit / 2;
+    }
 }
 
-.trademark {
-    margin-top: $spacing-unit;
-    font-size: $base-font-size / 2;
-    color: $grey-color;
+.site-footer {
     clear: both;
+    margin-top: $spacing-unit;
+
+    .trademark {
+        font-size: $base-font-size / 2;
+        color: $grey-color;
+        clear: both;
+    }
 }
 

@@ -2,7 +2,6 @@
 layout: post
 title: "If everyone used adblock"
 excerpt: >
-
     Using adblock is almost a no-brain decision these days.
     What would happen to the Internet if all web-surfers realized its greatness?
     How can the companies that depend on advertising respond?
@@ -51,21 +50,40 @@ One of the following things will happen:
     Firefox already [did it accidentally][accident] in their beta.
     Additionally, almost all browsers now feature a Reading Mode which oblitherates all parts of a website except the exact content to be read.
 
-After that lengthy introduction we can finally raise the question: So what would the Internet look like if everyone used adblock?
+After that lengthy introduction we can finally raise the question:
+How does the Internet respond if everyone uses adblock?
 Ask this to someone, and their first thoughts will seem dismal:
+"Google is doomed."
+<!-- "The Internet relies on ads. Half of it can't survive with adblock."
+"All content would cost money!" -->
+A recent New York Times [article][wrong-times] agrees with all of the above while being slightly less alarmist.
+They suggest that ads will become more acceptable so that adblock software can create exceptions for them.
+Adblock Plus is cited as an instance where this is already happening.
 
-*   *Google is doomed.*
-*   *The Internet relies on ads.* *Half of it can't survive with adblock.*
-*   *All content would cost money!*
-
-I don't see the above scenarios as likely.
-Given a second thought, adblock has weaknesses.
+In order to agree with NYT, you must believe that the Internet will surrender to less effect means of funding (and consumers will compromise to a *partial* blocker).
+I do not see that happening.
+The Internet doesn't have its back against a wall; it's standing in front of a bookshelf.
+Adblock has weaknesses. It cannot call the shots.
 In the rest of this post we'll look at some ways for content providers to circumvent adblock without losing their funding or going to paid tiers.
 Many of the methods may seem obvious and almost all are already in the wild today.
 
+### Adblock detection
+
+Adblock detection most immediate fix to the adblock problem today.
+Simply detect the use of adblock, and deny serving any content if it's there.
+Most users will cave in and allow the ads.
+Hulu is a great example of this.
+
+Adblock detection is not a long-term solution however.
+Most of the detectors work by using a [canary in a coal mine][sentinel] approach:
+Attempt to load something disguised to look like an ad, and then check to see if it actually loaded.
+This is an easily beatable strategy though.
+An adblocker can just load a full webpage with ads in the background and only display the filtered contents to the user.
+The adblocker loses the speed advantage we praised earlier, but it makes this blog-post a more worthwhile read.
+
 ### Apps
 
-This first method might be the most prevalent solution.
+<!-- This first method might be the most prevalent solution. -->
 Simply stated: There are no extensions for mobile apps, and therefore there is no adblock to worry about.
 Developers decide exactly what is displayed in their apps.
 Need an ad for funding? Done. There's nothing in the way.
@@ -91,7 +109,58 @@ News sites and blogs need URLs in order to be shared and spread.
 There is no equivalent to a hyperlink for apps.
 The web needs solutions too.
 
+### Donations
+
+This is the least interesting of the proposals, so I don't feel too bad if you skip ahead.
+We should start off by fixing the definition of donation: A donation is a gift of money with no intention to bias or own a product.
+If we don't say this, it can be argued that advertising or subscribing are forms of donation.
+
+Donations aren't for every site, but they're not as bad of an option as many think.
+People do donate.
+Before the advent of "Acceptable Ads", Adblock Pro used to be wholly funded via PayPal.
+(This is still true for the majority of other browser extensions.)
+Wikipedia, a top 10 most visited site in the world, runs off of donations with zero advertisements.
+People on Kickstarter provided $55,000 to fund a [potato salad][potato]!
+
+The concept of *micropayments* is also starting to gain traction.
+Micropayments aren't meant to fund large efforts, but instead can be seen as tipping the Internet.
+Bloggers could add a PayPal button right next to the sharing icons for their posts.
+Hosting a static website could easily be covered by small $0.50 payments here and there.
+If you doubt that people would ever do such tipping on the Internet, watch a [Twitch](http://www.twitch.tv/) stream.
+Bitcoin and other cryptocurrencies are also great candidates for micropayments (which is the real reason this whole section exists).
+
+### Native advertising
+
+Watch this [clip][john-oliver]. It's a good laugh, and you deserve it after all my wordiness so far.
+
+Nowadays it's very common for news agencies to have sponsored articles (a.k.a. native advertising).
+These are stories whose content is biased to the views of a paying sponsor.
+Native advertising can be very effective. People read biased stories and then believe that they can make an informed decision afterwards.
+This is so much the case that consumer protection laws require such articles to be labeled "sponsored."
+
+Again assuming a perfectly law-abiding society, an adblocker can easily detect stories with "sponsored" tags.
+What can it do with them?
+The content is the ad! The whole webpage would have to be hidden.
+To make matters worse remove the law-abiding assuming (to include most of the media).
+Lacking labels, now we have to use non-existent advanced NLP to figure out if we're in the same conundrum.
+The adblocker is powerless.
+
+Google let's a small fraction of its search results be sponsored and labels them as such.
+One could expect that adblock could win in this type of situation by blocking the sponsored links and still leaving plenty of content behind.
+That's not the case.
+Google has offshore account; it knows how to use loopholes.
+Why not just do something to the effect of labeling everything as an ad?
+Say their sorting is the function of relevance and amount paid.
+All of a sudden adblock needs its NLP oracle again.
+
+### CAPTCHA ads
+
+I saved the evil for last.
 
 
 [accident]: http://www.geek.com/apps/mozilla-just-built-an-ad-blocker-into-firefox-1631245/
+[john-oliver]: https://www.youtube.com/watch?v=E_F5GxCwizc
+[potato]: https://www.kickstarter.com/projects/zackdangerbrown/potato-salad
+[sentinel]: https://en.wikipedia.org/wiki/Animal_sentinel
 [simple-detect]: http://stackoverflow.com/questions/4869154/how-to-detect-adblock-on-my-website
+[wrong-times]: http://www.nytimes.com/2015/08/20/technology/personaltech/ad-blockers-and-the-nuisance-at-the-heart-of-the-modern-web.html
