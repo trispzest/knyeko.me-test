@@ -5,6 +5,7 @@ excerpt: >
     Using adblock is almost a no-brain decision these days.
     What would happen to the Internet if all web-surfers realized its greatness?
     How can the companies that depend on advertising respond?
+disqus_id: 30
 ---
 Using adblock is almost a no-brain decision these days.
 It does so much to improve the web-surfing experience of browsers:
@@ -53,14 +54,18 @@ One of the following things will happen:
 After that lengthy introduction we can finally raise the question:
 How does the Internet respond if everyone uses adblock?
 Ask this to someone, and their first thoughts will seem dismal:
-"Google is doomed."
-<!-- "The Internet relies on ads. Half of it can't survive with adblock."
-"All content would cost money!" -->
-A recent New York Times [article][wrong-times] agrees with all of the above while being slightly less alarmist.
-They suggest that ads will become more acceptable so that adblock software can create exceptions for them.
-Adblock Plus is cited as an instance where this is already happening.
 
-In order to agree with NYT, you must believe that the Internet will surrender to less effect means of funding (and consumers will compromise to a *partial* blocker).
+>   Google is doomed.
+>   The Internet relies on ads. Half of it can't survive with adblock.
+>   The only things left would all cost money!
+
+This is quite reasonable to think.
+Most sites are simply never going to be worth a $5/month subscription or a Wikipedia-like fund-raiser; ads are essential to survival.
+A recent New York Times [article][wrong-times] offers a less alarmist point of view:
+
+>   If blocking becomes widespread, the ad industry will be pushed to produce ads that are simpler, less invasive and far more transparent about the way they’re handling our data
+
+In order to agree with NYT, you must believe that the Internet will surrender to a less effective means of funding.
 I do not see that happening.
 The Internet doesn't have its back against a wall; it's standing in front of a bookshelf.
 Adblock has weaknesses. It cannot call the shots.
@@ -109,7 +114,8 @@ News sites and blogs need URLs in order to be shared and spread.
 There is no equivalent to a hyperlink for apps.
 The web needs solutions too.
 
-### Donations
+<!--
+### Subscriptions and donations
 
 This is the least interesting of the proposals, so I don't feel too bad if you skip ahead.
 We should start off by fixing the definition of donation: A donation is a gift of money with no intention to bias or own a product.
@@ -128,6 +134,7 @@ Bloggers could add a PayPal button right next to the sharing icons for their pos
 Hosting a static website could easily be covered by small $0.50 payments here and there.
 If you doubt that people would ever do such tipping on the Internet, watch a [Twitch](http://www.twitch.tv/) stream.
 Bitcoin and other cryptocurrencies are also great candidates for micropayments (which is the real reason this whole section exists).
+-->
 
 ### Native advertising
 
@@ -155,7 +162,36 @@ All of a sudden adblock needs its NLP oracle again.
 
 ### CAPTCHA ads
 
-I saved the evil for last.
+I saved the greatest evil for last.
+
+CAPTCHA advertisements function exactly as you would expect them to.
+Take an ordinary CAPTCHA, replace the obfuscated text with a banner ad, and set the challenge to be something of the sort: "How much money could you save by switching to Geico?"
+Block access to a piece of content until the correct response to the challenge is given.
+
+Just like a regular CAPTCHA, unless there is a huge advancement in AI, only a human can complete the challenge.
+The user must *study* the ad, find the message the sponsor wants to get across, and *repeat* the message back to the ad.
+Instead of having the option to hide or look away from them, users are forced to pay attention to the ads they despise.
+It's the most effective form of advertising possible without knocking on someone's door.
+Adblock is powerless.
+
+The wickedness doesn't stop there though.
+Advertisers can set their challenges such that users must actually click on their ad and enter their site in order to find the answers.
+This is a 100% click-through rate!
+Advertisers and websites are going to win big while consumers get a middle finger on their computer screen.
+
+Don't blame me if CAPTCHA ads become widespread.
+I'm not the only one to have thought of them.
+There [are](http://www.nlpcaptcha.in/en/index.html) [already](http://www.adaptcha.com/) [companies](http://solvemedia.com/) out there with CAPTCHA ad platforms.
+None of them are as big-name as Google or Facebook yet, and they're also not nearly as exploitive as what we've discussed above.
+However they are waiting. The infrastructure is there.
+If adblock pushes the Internet to these companies, we're in trouble.
+
+### Conclusion
+
+I don't feel guilty about using adblock.
+In the short-term, it makes life wonderful.
+In the long-term, the Internet will be content with it too.
+Go out and download adblock. Join me in continuing the fun thought experiment on how to break it.
 
 
 [accident]: http://www.geek.com/apps/mozilla-just-built-an-ad-blocker-into-firefox-1631245/

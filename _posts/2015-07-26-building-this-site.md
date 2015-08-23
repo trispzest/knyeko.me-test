@@ -5,6 +5,7 @@ excerpt: >
     This is a standalone post logging my building adventures with this site.
     Nifty widgets I've made or praise-worthy plugins I've found will be mentioned here.
     Hopefully it will be useful for those hopping into Github/Jekyll blogging.
+disqus_id: 20
 ---
 I spent a long time deciding between using GitHub/Jekyll or WordPress for my blog.
 The former is fast, customizable, and gives hacker-cred, while the latter is easy to set up and offers non-static site features.
