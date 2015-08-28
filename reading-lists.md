@@ -11,6 +11,7 @@ permalink: /reading/
 *   [Ethereum Blog](https://blog.ethereum.org/)
 *   [Godel's Lost Letter and P=NP](https://rjlipton.wordpress.com/)
 *   [Hacking, Distributed](http://hackingdistributed.com/)
+*   [in theory](https://lucatrevisan.wordpress.com/)
 *   [Not so Great Ideas in Theoretical Computer Science](https://mittheory.wordpress.com/)
 *   [Shtetl-Optimized](http://www.scottaaronson.com/blog/)
 *   [The n-Category Cafe](https://golem.ph.utexas.edu/category/)

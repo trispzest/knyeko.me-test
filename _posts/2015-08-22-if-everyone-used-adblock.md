@@ -17,25 +17,26 @@ It does so much to improve the web-surfing experience of browsers:
     Your goal is to read the headlines, so you install adblock.
 
 *   Adblock gives you speed.
-    Surprisingly making 50 less HTTP calls does allow a page to load faster.
+    Not surprisingly, making 50 less HTTP calls does allow a page to load faster.
     Not being forced to watch the same movie trailer for the 16th time means you don't have to wait for it to buffer for the 16th time too.
     There's not a single ad in the world that speeds up a webpage.
     Installing adblock is cheaper than getting more bandwidth from an ISP.
 
 *   Security.
     Suppose you want to watch a sports game, but you can't find it in your cable subscription because none of the teams playing are local.
-    There are some **very illegal sites** which allow you to **illegally** stream such games.
-    These **deplorable** sites are supported by advertisers whose morals are often even lower.
+    There are some (very illegal) sites which allow you to (illegally) stream such games.
+    These (deplorable) sites are supported by advertisers whose morals are often even lower.
     You might be smart enough to dodge their phishing attempts, but your browser will left all alone to fight off whatever malicious code is present.
-    If you install adblock and navigate to one of these dirty corners of the web **for security research purposes**, you're likely to come out unscathed.
+    If you install adblock and navigate to one of these dirty corners of the web (for security research purposes), you're likely to come out unscathed.
     Since middle school I've been using adblock on regularly updated Windows (without the Norton virus).
     During this time I've never gotten a virus from web-browsing.
-    (Of course, this is more due to the fact that I've **never** done anything illegal on the Internet.)
+    (Of course, this is more due to the fact that I've *never* done anything illegal on the Internet.)
 
-Given how overwhelmingly beneficial adblock is to web-browser, I'm stunned at how often I find people who don't have it.
-I guess it's not being advertised enough.
-Possibly the same forces keeping IE7 at a significant market share are in play as well.
-I don't believe we'll be in this situation for long, and adblock will someday be popular enough that websites won't be able to afford to ignore it.
+Given how overwhelmingly beneficial adblock is to web-browsing, I'm stunned at how often I find people who don't have it.
+<!-- I guess it's not being advertised enough. -->
+Somehow the same inexplicable forces keeping IE7 at a significant market share are suppressing adblock's popularity too.
+However, I don't believe we'll this is a permanent fate.
+Adblock will eventually achieve prevalence.
 One of the following things will happen:
 
 1.  Adblock continues to naturally grow in popularity.
@@ -75,13 +76,13 @@ Many of the methods may seem obvious and almost all are already in the wild toda
 ### Adblock detection
 
 Adblock detection most immediate fix to the adblock problem today.
-Simply detect the use of adblock, and deny serving any content if it's there.
+Simply detect the use of adblock and deny serving any content if it's there.
 Most users will cave in and allow the ads.
 Hulu is a great example of this.
 
 Adblock detection is not a long-term solution however.
 Most of the detectors work by using a [canary in a coal mine][sentinel] approach:
-Attempt to load something disguised to look like an ad, and then check to see if it actually loaded.
+Attempt to load something disguised to look like an ad and then check to see if it actually loaded.
 This is an easily beatable strategy though.
 An adblocker can just load a full webpage with ads in the background and only display the filtered contents to the user.
 The adblocker loses the speed advantage we praised earlier, but it makes this blog-post a more worthwhile read.

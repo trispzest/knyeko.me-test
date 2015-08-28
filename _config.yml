@@ -16,6 +16,6 @@ exclude: [
   sandbox/,
   website.*,
   ]
-permalink: /posts/:title.html
+permalink: /posts/:title
 enable_disqus: true
 enable_social: true
