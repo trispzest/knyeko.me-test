@@ -37,6 +37,10 @@
         top: 0px;
         clear: both;
     }
+    @include media-query($on-skinny) {
+        padding-left: $spacing-unit / 2;
+        padding-right: $spacing-unit / 2;
+    }
 
     // Stylistic stuff
     background-color: $background-color;
@@ -177,6 +181,10 @@
         margin-left: 0px;
         width: 100%;
     }
+    @include media-query($on-skinny) {
+        padding-left: $spacing-unit / 2;
+        padding-right: $spacing-unit / 2;
+    }
 }
 
 .post-meta {
@@ -192,13 +200,14 @@
     .post-title {
         font-size: $post-title-size;
         letter-spacing: -1px;
-        line-height: $tight-line-height;
-        margin-top: $post-title-size - ($tight-line-height * $post-title-size);
+
+        line-height: 1;
+        margin-top: $slack-line-height * $post-title-size / 2;
+        margin-bottom: - $slack-line-height * $post-title-size / 2;
 
         @include media-query($on-palm) {
             font-size: 36px;
         }
-        // border: 1px solid red;
     }
 
     .post-meta {
@@ -260,13 +269,14 @@
     .post-link {
         display: block;
         font-size: $post-link-size;
-        line-height: $tight-line-height;
-        padding-bottom: $base-font-size;
-        margin-top: (1 - $tight-line-height) * $post-link-size;
 
         &,&:visited {
             color: black;
         }
+
+        line-height: 1;
+        margin-top: $slack-line-height * $post-link-size / 2;
+        padding-bottom: $base-font-size - ($slack-line-height * $post-link-size / 2);
     }
 }
 

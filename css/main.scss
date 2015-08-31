@@ -12,6 +12,7 @@ $small-font-factor: 0.875;
 
 $base-line-height:  1.5;
 $tight-line-height: 0.65;
+$slack-line-height: 1 - $tight-line-height;
 $small-line-height: $base-line-height / $small-font-factor;
 
 $base-font-size:    16px;
@@ -46,9 +47,14 @@ $on-widescreen:     900px;
 $sidebar-width:     200px;
 // $on-laptop:         $on-widescreen - $sidebar-width;
 $on-palm:           700px;
+$on-skinny:         400px;
 
 
-// Using media queries with like this:
+////////////
+// Mixins //
+////////////
+
+// Screen size media query
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
