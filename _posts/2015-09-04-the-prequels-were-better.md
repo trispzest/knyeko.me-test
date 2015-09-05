@@ -4,6 +4,7 @@ title: "The prequels were better"
 excerpt: >
     This post is a departure from CS and tech, but hopefully still is "nerdy" enough to seem appropriate for this blog:
     The Star Wars prequels were better than the sequels. Get at me.
+disqus_id: 40
 ---
 This shouldn't be news to you: *Start Wars Episode XII: The Force Awakens* is coming out Christmas day.
 Like millions of fans around the world, I am delighted and can't wait to see it.
@@ -81,7 +82,7 @@ This is accomplished with a plot actually meant from the start for three movies 
     Instead of warring around like medieval tribes, politics won in a way reminiscent of many more modern events.
 
 Maybe in 20 years the above points will no longer seem significant and every pre-teen book will tell the same story.
-However in today's world that is not the case. The prequel's plot is far superior.
+However in today's world that is not the case. The prequels' plot is far superior.
 
 
 
@@ -90,13 +91,40 @@ However in today's world that is not the case. The prequel's plot is far superio
 I know *Star Wars* is set in a fantasy galaxy very different from real-life on Earth.
 However there are still expectations of believability that must be met.
 The films must seem consistent with the rules of universe.
-Both the prequels and sequels had flaws here, but the sequels are just atrocious at times.
+Both the prequels and sequels had flaws here, but the sequels are just atrocious.
 
-I might actually be in the majority with this point: Stormtroppers are the worst elite fighting forcing in the Galaxy.
+I might actually be in the majority with this point: Stormtroppers are the worst elite fighting force in the Galaxy.
 In a world that surely had infrared goggles and seeking missiles, the Stormtroppers and Tie Fighters could never stop missing.
 The only major target the Empire hit in all three movies was a planet!
 Meanwhile, the Rebels and their couple dozen star-fighters are able to put up a fight.
 Everyone loves rooting for the underdog, but nobody's satisfied if the incumbent throws the match.
+
+Speaking of throwing fights, how did the Death Star get destroyed *twice*?
+I already mentioned how bringing back the Death Star was a cheap plot trick, but it's almost insulting if the battle station is brought down in almost the exact same way:
+
+1.  Rebels spies steal plans exposing Death Star weaknesses.
+    (From a computer security perspective this shouldn't even be an issue.)
+
+2.  The Rebels send about a dozen star-fighters to take down a moon-sized warship.
+    There were additional larger cruisers sent in during Episode VI, but they never attacked anything and literally only served the role of getting trapped.
+
+3.  The teeny Rebel star-fighters find a way to shoot at the Death Star's core with their teeny weapons.
+    Somehow this is sufficient, the Death Star blows up, and the fighters escape faster than the nuclear explosion.
+
+If my trillion dollar planet was blown up, the last thing I'd do is spend another trillion to build it in the exact same way with the same weaknesses.
+Why didn't they weaponize an existing planet (with a non-nuclear core) or something different with similar scale?
+It's aggravating to watch a movie and have questions like those above pop up.
+
+If it wasn't for the prequels, I would think Lucas didn't care at all about maintaining his *Star Wars* universe.
+The prequels show us all the things that could exist in *Star Wars* without giving the feeling of being *Force*-fed.
+There many fantastics planets, diverse alien species, and advanced technologies.
+The Droid army again sucks, but it's excusable this time because of their AI.
+The Clone army actually has numbers that reasonably rival the Droids.
+Sure, it's probably the case that the prequels on achieved their better realism via modern CGI, but I'm not going to scale up the sequels' just because their special effects were so groundbreaking for their time.
+The same goes for casting and plot.
+When I watch a movie the only thing that matters is the picture and sound, not the age.
+
+
 
 
 [i-am-your-father]: https://www.youtube.com/watch?v=_lOT2p_FCvA
